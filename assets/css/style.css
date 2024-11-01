@@ -207,22 +207,27 @@ header .navbar ul li a:hover {
   padding-top: 1rem;
   z-index: 1;
 }
+/* Hero Section Image Styling */
 .home .image {
     position: relative;
     width: 250px;
     height: 250px;
     overflow: hidden;
-    border-radius: 50%; /* Making the profile image circular */
+    border-radius: 50%; /* Circular profile picture */
     border: 3px solid #333; /* Border around profile image */
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow */
 }
+
 .home .image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: 0.3s ease-in-out; /* Smooth transition for hover */
 }
+
 .home .image img:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+    transform: scale(1.05); /* Slight zoom-in effect */
 }
 .home .experience {
     position: absolute;
