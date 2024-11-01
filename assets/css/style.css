@@ -177,17 +177,6 @@ header .navbar ul li a:hover {
   }
 }
 /* hamburger icon ends */
-/* Profile Image Styling */
-.profile-image {
-    position: relative;
-    width: 250px;
-    height: 250px;
-    overflow: hidden;
-    border-radius: 50%; /* Making the profile image circular */
-    border: 3px solid #333; /* Border around profile image */
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow */
-}
-
 .profile-image img {
     width: 100%;
     height: 100%;
@@ -207,27 +196,6 @@ header .navbar ul li a:hover {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow for emphasis */
     font-weight: bold; /* Bold text for emphasis */
 }
-
-/* Social Links Styling */
-.social-links {
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-    font-size: 14px;
-    writing-mode: vertical-rl; /* Vertical text layout */
-}
-
-.social-links a {
-    color: #333;
-    text-decoration: none;
-    margin-bottom: 15px;
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
-}
-
-.social-links a:hover {
-    color: #0077b5; /* Light blue color for hover */
-}
-
 /* hero section starts*/
 .home {
   position: relative;
@@ -262,7 +230,7 @@ header .navbar ul li a:hover {
   z-index: 1;
 }
 .home .image img {
-  width: 70%;
+  width: 10%;
   margin-left: 6rem;
   border-radius: 50%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
@@ -324,13 +292,17 @@ header .navbar ul li a:hover {
 
 /* social icons start */
 .socials {
-  position: relative;
-  margin-top: 9rem;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 14px;
+    writing-mode: vertical-rl; /* Vertical text layout */
 }
 .socials .social-icons {
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 15px;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
 .socials .social-icons li {
   display: inline-block;
@@ -354,7 +326,7 @@ header .navbar ul li a:hover {
 .social-icons a:active,
 .social-icons a:focus,
 .social-icons a:hover {
-  color: #fff;
+  color: #0077b5; /* Light blue color for hover */
   background-color: #0685da;
 }
 .social-icons a.github:hover {
