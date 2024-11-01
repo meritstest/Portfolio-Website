@@ -208,18 +208,33 @@ header .navbar ul li a:hover {
   z-index: 1;
 }
 .home .image {
-  flex: 1 1 40rem;
-  z-index: 1;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%; /* Making the profile image circular */
+    border: 3px solid #333; /* Border around profile image */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow */
 }
 .home .image img {
-  width: 70%;
-  margin-left: 6rem;
-  border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .home .image img:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+.home .experience {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow for emphasis */
+    font-weight: bold; /* Bold text for emphasis */
 }
 .home .content h2 {
   font-size: 5rem;
