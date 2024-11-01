@@ -209,13 +209,14 @@ header .navbar ul li a:hover {
 }
 /* Hero Section Image Styling */
 .home .image {
-    position: relative;
-    width: 250px;
-    height: 250px;
-    overflow: hidden;
-    border-radius: 50%; /* Circular profile picture */
-    border: 3px solid #333; /* Border around profile image */
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+  background-image: url("../images/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-block: 100px var(--section-padding);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
 }
 
 .home .image img {
