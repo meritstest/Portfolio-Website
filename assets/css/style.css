@@ -177,25 +177,7 @@ header .navbar ul li a:hover {
   }
 }
 /* hamburger icon ends */
-.profile-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
-/* Experience Tag Styling */
-.experience {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: #333;
-    color: #fff;
-    padding: 5px 10px;
-    font-size: 12px;
-    border-radius: 5px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow for emphasis */
-    font-weight: bold; /* Bold text for emphasis */
-}
 /* hero section starts*/
 .home {
   position: relative;
@@ -230,7 +212,7 @@ header .navbar ul li a:hover {
   z-index: 1;
 }
 .home .image img {
-  width: 10%;
+  width: 70%;
   margin-left: 6rem;
   border-radius: 50%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
@@ -289,20 +271,15 @@ header .navbar ul li a:hover {
 .home .btn:hover i {
   transform: translateX(5px);
 }
-
 /* social icons start */
 .socials {
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-    font-size: 14px;
-    writing-mode: vertical-rl; /* Vertical text layout */
+  position: relative;
+  margin-top: 9rem;
 }
 .socials .social-icons {
-    color: #333;
-    text-decoration: none;
-    margin-bottom: 15px;
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
 }
 .socials .social-icons li {
   display: inline-block;
@@ -326,7 +303,7 @@ header .navbar ul li a:hover {
 .social-icons a:active,
 .social-icons a:focus,
 .social-icons a:hover {
-  color: #0077b5; /* Light blue color for hover */
+  color: #fff;
   background-color: #0685da;
 }
 .social-icons a.github:hover {
