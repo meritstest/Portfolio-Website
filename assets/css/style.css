@@ -217,32 +217,33 @@ header .navbar ul li a:hover {
 .home .image {
   background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url("../images/hero-bg.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; /* Cover ensures the background image covers the area */
   background-position: center;
-  padding-block: 120px var(--section-padding);
-  min-height: 70%;
+  padding: 0; /* Removed padding to allow the image to dictate size */
+  min-height: auto; /* Set min-height to auto to allow natural sizing */
   display: grid;
   place-items: center;
-  border-radius: 15px;
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 15px; /* Smooth corner for the image section */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
 }
 
 .home .image img {
-  width: 70%;
-  height: 70%;
-  object-fit: cover;
+  width: auto; /* Auto width to maintain original aspect ratio */
+  height: auto; /* Auto height to maintain original aspect ratio */
+  max-width: 100%; /* Ensures image does not exceed container */
+  max-height: 100%; /* Ensures image does not exceed container */
+  object-fit: contain; /* Contain ensures the image is fully visible without distortion */
   transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
   border-radius: 10px;
-  border: 2px solid rgba(255, 255, 255, 0.7);
-  filter: grayscale(15%);
+  border: 2px solid rgba(255, 255, 255, 0.7); /* Light border for a framed look */
+  filter: grayscale(15%); /* Initial slight grayscale for a sleek look */
 }
 
 .home .image img:hover {
-  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
-  transform: scale(1.08);
-  filter: grayscale(0%);
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  filter: grayscale(0%); /* Restore color on hover */
 }
-
 .home .experience {
   position: absolute;
   top: 10px;
