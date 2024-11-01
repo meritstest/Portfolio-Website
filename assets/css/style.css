@@ -177,6 +177,56 @@ header .navbar ul li a:hover {
   }
 }
 /* hamburger icon ends */
+/* Profile Image Styling */
+.profile-image {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%; /* Making the profile image circular */
+    border: 3px solid #333; /* Border around profile image */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Experience Tag Styling */
+.experience {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow for emphasis */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+/* Social Links Styling */
+.social-links {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 14px;
+    writing-mode: vertical-rl; /* Vertical text layout */
+}
+
+.social-links a {
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 15px;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.social-links a:hover {
+    color: #0077b5; /* Light blue color for hover */
+}
 
 /* hero section starts*/
 .home {
@@ -271,6 +321,7 @@ header .navbar ul li a:hover {
 .home .btn:hover i {
   transform: translateX(5px);
 }
+
 /* social icons start */
 .socials {
   position: relative;
