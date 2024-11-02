@@ -25,7 +25,7 @@ body {
 }
 
 *::selection {
-  background: #007bff; /* A professional blue color for selection */
+  background: #13d85e; /* A professional blue color for selection */
   color: #fff;
 }
 
@@ -38,7 +38,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #007bff; /* Consistent scrollbar color */
+  background: #dda809; /* Consistent scrollbar color */
 }
 
 /* Preloader Styles */
@@ -92,9 +92,9 @@ section {
 }
 
 header .logo {
-  font-size: 2rem; /* Increased logo size for visibility */
+  font-size: 3rem; /* Increased logo size for visibility */
   font-weight: 700;
-  color: #0e2431;
+  color: #0c1a22;
 }
 
 header .logo i {
@@ -150,7 +150,7 @@ header .navbar ul li a:hover {
     right: -120%;
     width: 75%;
     height: 100%;
-    text-align: left;
+    text-align: center;
     align-items: flex-start;
     background-color: #0e0f31; /* Dark background for contrast */
   }
@@ -201,7 +201,7 @@ header .navbar ul li a:hover {
 }
 
 .home #particles-js {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100%;
@@ -251,20 +251,23 @@ header .navbar ul li a:hover {
   background-color: #333;
   color: #fff;
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 15px;
   border-radius: 5px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   font-weight: bold;
+  flex-wrap: wrap;
 }
 .home .content h2 {
   font-size: 5rem;
   font-weight: 800;
   color: #002057;
+  font-family: "Nunito", sans-serif; /* Font family */
+
 }
 .home .content h2 span {
   font-size: 5rem;
   font-weight: 800;
-  color: #ff7b00;
+  color: #1a0b02;
 }
 .home .content p {
   font-size: 2.5rem;
@@ -277,34 +280,45 @@ header .navbar ul li a:hover {
   color: rgb(148, 8, 8);
   font-weight: 600;
   padding: 1rem 0;
+  font-family: "Nunito", sans-serif; /* Font family */
+
 }
+.home .button-container {
+  display: flex;               /* Use flexbox for button layout */
+  gap: 1rem;                  /* Space between buttons */
+  margin-top: 1rem;           /* Space above buttons */
+  position: absolute;          /* Position as needed */
+}
+
 .home .btn {
-  margin-top: 1rem;
-  position: absolute;
-  line-height: 0;
-  padding: 1.6rem 3rem;
-  border-radius: 4em;
-  transition: 0.5s;
-  color: #fff;
-  background: #2506ad;
-  box-shadow: 0px 5px 18px rgba(48, 68, 247, 0.6);
-  font-family: "Nunito", sans-serif;
+  line-height: 0;             /* Reset line-height */
+  padding: 1.6rem 3rem;       /* Padding for buttons */
+  border-radius: 4em;         /* Rounded corners */
+  transition: 0.5s;            /* Transition for hover effects */
+  color: #fff;                 /* Text color */
+  background: #2506ad;        /* Button background color */
+  box-shadow: 0px 5px 18px rgba(48, 68, 247, 0.6); /* Shadow effect */
+  font-family: "Nunito", sans-serif; /* Font family */
 }
+
 .home .btn span {
-  font-weight: 700;
-  font-size: 1.7rem;
-  letter-spacing: 0.1rem;
+  font-weight: 700;           /* Bold text */
+  font-size: 1.7rem;          /* Font size */
+  letter-spacing: 0.1rem;     /* Letter spacing */
 }
+
 .home .btn i {
-  margin-left: 0.3rem;
-  font-size: 1.5rem;
-  transition: 0.3s;
+  margin-left: 0.3rem;        /* Space between text and icon */
+  font-size: 1.5rem;          /* Icon size */
+  transition: 0.3s;           /* Transition for icon movement */
 }
+
 .home .btn:hover {
-  background: #1a047e;
+  background: #ca500a;        /* Background color on hover */
 }
+
 .home .btn:hover i {
-  transform: translateX(5px);
+  transform: translateX(5px); /* Icon movement on hover */
 }
 /* social icons start */
 .socials {
@@ -360,6 +374,15 @@ header .navbar ul li a:hover {
 
 /* hero media queries starts*/
 @media (max-width: 450px) {
+    .home .button-container {
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+        align-items: center; /* Center buttons */
+    }
+    
+    .home .btn {
+        width: 100%; /* Full width on small screens */
+        max-width: 300px; /* Optional: limit max width */
+    }
   .home .btn {
     margin: 4rem 0;
   }
