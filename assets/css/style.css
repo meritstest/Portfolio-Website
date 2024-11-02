@@ -245,9 +245,9 @@ header .navbar ul li a:hover {
   filter: grayscale(0%); /* Restore color on hover */
 }
 .home .experience {
-  position: absolute;
-  top: 10px;
-  right: 10px;
+  position: absolute; /* Keeps the element in the same place */
+  top: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
   background-color: #333;
   color: #fff;
   padding: 5px 10px;
@@ -255,7 +255,6 @@ header .navbar ul li a:hover {
   border-radius: 5px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   font-weight: bold;
-  flex-wrap: wrap;
 }
 .home .content h2 {
   font-size: 5rem;
@@ -378,7 +377,12 @@ header .navbar ul li a:hover {
         flex-direction: column; /* Stack buttons vertically on smaller screens */
         align-items: center; /* Center buttons */
     }
-    
+    .home .experience {
+    top: 5px; /* Adjust top position for smaller screens */
+    right: 5px; /* Adjust right position for smaller screens */
+    font-size: 13px; /* Smaller font size for better fit */
+    padding: 4px 8px; /* Smaller padding for better spacing */
+  }
     .home .btn {
         width: 100%; /* Full width on small screens */
         max-width: 300px; /* Optional: limit max width */
@@ -405,6 +409,10 @@ header .navbar ul li a:hover {
 /* about section starts */
 .about {
   background: rgb(255, 255, 255);
+  background-image: url('./Screenshot 2024-02-19 102131.png'); /* Replace with your image path */
+  background-size: cover; /* Cover the entire section */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
 }
 .about .row {
   display: flex;
